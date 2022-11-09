@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mineral-rune-365815",
+  "private_key_id": "fdd7b7452d9e2eaae8e6bc610ecb67ca1baef09f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC9WxTb7WSYAQi9\nyu/xH5rpWOLQ//BVoOpOB+O3SWijLmsa5M3K8Ms1kJRRR7RT9wnXE0jYtv1BMlFy\nnHfmif4vo+sCsxepnqRy69PXySnIY8X8zHGsjotSysawRvKYPW74jXDGWNSyUgp7\n2I6+1oNqJZ1OoxSWHW7CcbDRwCWR8rZMISCrxJwHCYpQh5tBiih+bMLqHmLkIHC3\n+a6lOVfzm+JtigaP23K1yqeE5jACqY88I1JX5eDmPsHYRVqtPtLlgITcASFw3GwL\n+Hn4g0ccgzE3CnAJRqwPa4l8xri5gRstescuMsNdOcJOtbukL01WqOX7XLVsFLVC\nBGkrn4xbAgMBAAECggEABbL6lz33Y53QWgoEG8FEQ9axiPHTFXiw5KVXJLqYZCTv\nA1G0ofGKZDPUSvf6BPbv/GGvtRoY2D//9I+iCjXICT4JQj0KrsfAEldnulxrHgVm\nvZuXpkZqChVhUofoIE3lC6USKl4dFLrkZuLXNQY20ViNegLtiTEclsyeMknyt4hF\nvx8u/CP9YGzu7Qh+xWJ4lxpw7OlAKZkwZsXIrO4lw3cEwhNYb1HYRJfut/A7mnwl\nDkl+kLiKhkkt1USR4L+KncCI4ocmh8J6rMMQFAhHobTD8xDByfGKWeBudjDcz3Ka\nJJLYsnpOlTp4oZVRNEaXxoztDcv0Vx2VaDwOlVwf3QKBgQD2TMNxuOkyPTXknnxQ\najx3dX7DU1od4ITb3LdFdEErsFdTzLZBOSc4AgXqQzTWDs4U3w775NXonIbFI0Qx\nngtLqUrnp1wDZEj+5VFVRzZmcnqzEFDa8pVx1Kumc4H9QejVz/TlvlVg2yMp5jOc\n0CMFAYDm9XFxzePGATYMl7ZfnwKBgQDE0DLGl58w44x6zljtzRV/gy7B1KarTcyC\noHFmTuhhAW4wZHbHZNByMXBWvlttt2kRT9W8XgYCbwFdZ0a0uy0fHCIQUP+R1B5N\n6BDfooX2JTZJWdVPbuct+cF3Gr9QSi58HJEznQd98/eYVhXoXyNxQtSYmB7FVBgT\n8N0NB9ipxQKBgQCRWfPtZQaZ022+oZkTi95rUTeh5crE3v8JEVRG9LiRI9wlZCYa\nj7QJZYhAG7FOsiYEQy8AkKd8QwN1y74u2eoomJvP4gB3L/O0GXjKLuB3zQ+EJRjS\nXV68cplp/bi00PSrWbJY8t5H7ort6yCCZoKELcL4idiNJMhKzeQrwkyqWQKBgQCB\n2PKG/2WxtY7rPtSBH7s9Q2lHzGqhvlRdIkluvESoK29tUfrjlmnHzUJWmIRtoIIb\nP9a9zjKczGvUGd0WRB+C1ObMaQQUTCQqNh9bzDghq29jeXc4Tu0K8ipn0CfEawy8\nKYTKzqEwwhLqWHFfu9UAVp04h7RVcCPqlBDjFfgmGQKBgQC7f/3C6jw4T2DxNo0p\nKoZzUVk1iR/3HYwcfXVrBjc8nMHKXwwvgV6GAKme1EkoB/6lsfDDbuZoBPczF+YI\n8LwYwbqECbj0Nvfz/OzBAAtAvNgKjJf2OeDeiQMlulxTb36zF2c7eK8hLxZyBHeX\njJ9mfITEsl0TbTXFQaUjkdpkIQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "idsa-proje@mineral-rune-365815.iam.gserviceaccount.com",
+  "client_id": "101290940820872810345",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/idsa-proje%40mineral-rune-365815.iam.gserviceaccount.com"
+}
