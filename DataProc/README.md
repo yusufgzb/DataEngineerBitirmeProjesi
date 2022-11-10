@@ -26,8 +26,11 @@ val activationDF = kafkaDF.select(from_json($"value".cast("string"),schema).alia
 
 
 val df = activationDF.select($"activation"("name").alias("name"),
+
 $"activation"("country").alias("country"),
+
 $"activation"("localtime").alias("localtime"),
+
 $"activation"("temp_c").alias("temp_c"))
 
 val modelCountDF = df.filter($"activation"("temp_c")>15)
