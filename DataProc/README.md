@@ -37,7 +37,7 @@ $"activation"("temp_c").alias("temp_c"))
 val modelCountDF = df.filter($"activation"("temp_c")>15)
 
 
-val modelCountQuery = modelCountDF.writeStream.outputMode("append").format("bigquery").option("table","idsadb.idsadb_table").option("checkpointLocation", "/path/to/checkpoint/dir/in/hdfs").option("credentialsFile","/home/isteveriseti1/astute1.json").option("failOnDataLoss",false).option("truncate",false).start().awaitTermination()
+val modelCountQuery = modelCountDF.writeStream.outputMode("append").format("bigquery").option("table","idsadb.idsadb_table").option("checkpointLocation", "/path/to/checkpoint/dir/in/hdfs").option("credentialsFile","/home/zsfdsfsfe/astute1.json").option("failOnDataLoss",false).option("truncate",false).start().awaitTermination()
 
 
 
