@@ -2,9 +2,9 @@ Kafka
 
 cd /opt/kafka/
 
-nohup bin/zookeeper-server-start.sh config/zookeeper.properties &
+sudo nohup bin/zookeeper-server-start.sh config/zookeeper.properties &
 
-nohup bin/kafka-server-start.sh config/server.properties &
+sudo nohup bin/kafka-server-start.sh config/server.properties &
 
 
 bin/kafka-topics.sh --create --topic ornek --bootstrap-server localhost:9092
