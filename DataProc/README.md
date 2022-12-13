@@ -1,4 +1,5 @@
 Scala
+
 spark-shell --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 --jars=gs://spark-lib/bigquery/spark-bigquery-latest_2.12.jar
 
 import spark.implicits._
