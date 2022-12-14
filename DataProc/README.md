@@ -18,7 +18,7 @@ spark.conf.set("temporaryGcsBucket", bucket)
 
 spark.conf.set("parentProject", "diesel-octane-371212")
 
-val kafkaDF = spark.readStream.format("kafka").option("kafka.bootstrap.servers","34.75.244.4:9092").option("subscribe","ornek").load
+val kafkaDF = spark.readStream.format("kafka").option("kafka.bootstrap.servers","34.125.54.90:9092").option("subscribe","ornek").load
 
 val schema = StructType(List(StructField("name",StringType),StructField("country",StringType),StructField("localtime", StringType),StructField("temp_c",FloatType)))
 
