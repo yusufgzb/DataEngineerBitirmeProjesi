@@ -18,13 +18,11 @@ spark.conf.set("temporaryGcsBucket", bucket)
 
 spark.conf.set("parentProject", "diesel-octane-371212")
 
-val kafkaDF = spark.readStream.format("kafka").option("kafka.bootstrap.servers","localhost:9092").option("subscribe","ornek").load
+val kafkaDF = spark.readStream.format("kafka").option("kafka.bootstrap.servers","34.125.54.90:9092").option("subscribe","ornek").load
 
-val schema = StructType(List(StructField("name",StringType),StructField("country",StringType),StructField("localtime", StringType),StructField("temp_c",FloatType)))
-
+val schema = StructType(List(StructField("name",StringType),StructField("country",StringType),StructField("localtime", DataTypes.DateType),StructField("temp_c",FloatType)))
 
 val activationDF = kafkaDF.select(from_json($"value".cast("string"),schema).alias("activation"))
-
 
 val df = activationDF.select($"activation"("name").alias("name"),
 
@@ -36,8 +34,10 @@ $"activation"("temp_c").alias("temp_c"))
 
 val modelCountDF = df.filter($"activation"("temp_c")>0)
 
-
 val modelCountQuery = modelCountDF.writeStream.outputMode("append").format("bigquery").option("table","idsadb.idsadb_table").option("checkpointLocation", "/path/to/checkpoint/dir/in/hdfs").option("credentialsFile","/home/zsfdsfsfe/diesel.json").option("failOnDataLoss",false).option("truncate",false).start().awaitTermination()
+
+
+
 
 
 
