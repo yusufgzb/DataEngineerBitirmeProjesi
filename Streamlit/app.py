@@ -19,9 +19,9 @@ def bigquery_get_df(query="SELECT * FROM idsadb.idsadb_table"):
     rows = query_job.result()  # Waits for query to finish
     row_list=[]
     for row in rows:
-            value=[row[0],row[1],row[2],row[3],row[4]]
+            value=[row[0],row[1],row[2],row[3]]
             row_list.append(value)
-    df = pd.DataFrame(row_list,columns =['Names','Country','Local Time','Temp','Count'])
+    df = pd.DataFrame(row_list,columns =['Names','Country','Local Time','Temp'])
        
     return df
 
