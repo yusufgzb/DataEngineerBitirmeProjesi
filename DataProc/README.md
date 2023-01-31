@@ -36,6 +36,34 @@ val modelCountDF = df.filter($"activation"("temp_c")>0)
 
 val modelCountQuery = modelCountDF.writeStream.outputMode("append").format("bigquery").option("table","idsadb.idsadb_table").option("checkpointLocation", "/path/to/checkpoint/dir/in/hdfs").option("credentialsFile","/home/zsfdsfsfe/diesel.json").option("failOnDataLoss",false).option("truncate",false).start().awaitTermination()
 
+-------------------------------------------------------------------------------------------------------------
+
+pyspark
+
+from pyspark.sql.types import StructType, StructField, StringType, FloatType
+from pyspark.sql.functions import from_json
+
+bucket = "idsaproje2"
+spark.conf.set("temporaryGcsBucket", bucket)
+spark.conf.set("parentProject", "diesel-octane-371212")
+
+kafkaDF = spark.readStream.format("kafka").option("kafka.bootstrap.servers","34.125.54.90:9092").option("subscribe","ornek").load()
+
+schema = StructType([
+StructField("name", StringType()),
+StructField("country", StringType()),
+StructField("localtime", StringType()),
+StructField("temp_c", FloatType())
+])
+
+activationDF = kafkaDF.select(from_json(kafkaDF["value"].cast("string"), schema).alias("activation"))
+df = activationDF.select("activation.name", "activation.country", "activation.localtime", "activation.temp_c")
+modelCountDF = df.filter(df["temp_c"] > 0)
+
+modelCountQuery = modelCountDF.writeStream.outputMode("append").format("bigquery").option("table", "idsadb.idsadb_table").option("checkpointLocation", "/path/to/checkpoint/dir/in/hdfs").option("credentialsFile", "/home/zsfdsfsfe/diesel.json").option("failOnDataLoss", False).option("truncate", False).start().awaitTermination()
+
+-----------------------------------------------------------------------------------------------------------------
+
 
 
 
