@@ -9,8 +9,6 @@ wget https://downloads.apache.org/kafka/3.3.1/kafka_2.12-3.3.1.tgz
 
 tar -xzvf kafka_2.12-3.3.1.tgz
 
-sudo apt-get install openjdk-8-jdk
-
 cd  kafka_2.12-3.3.1
 
 sudo nohup bin/zookeeper-server-start.sh config/zookeeper.properties &
