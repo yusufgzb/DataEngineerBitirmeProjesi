@@ -5,7 +5,7 @@ Elle kurulum
 
 sudo apt-get install openjdk-8-jdk
 
-wget https://downloads.apache.org/kafka/3.3.1/kafka_2.12-3.3.1.tgz
+wget https://archive.apache.org/dist/kafka/3.3.1/kafka_2.12-3.3.1.tgz
 
 tar -xzvf kafka_2.12-3.3.1.tgz
 
