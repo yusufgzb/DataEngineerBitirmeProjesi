@@ -18,6 +18,8 @@ sudo nohup bin/kafka-server-start.sh config/server.properties &
 
 sudo bin/kafka-topics.sh --create --topic ornek --bootstrap-server localhost:9092
 
+sudo bin/kafka-topics.sh --delete --topic ornek --bootstrap-server localhost:9092
+
 sudo bin/kafka-console-consumer.sh --topic ornek --from-beginning --bootstrap-server localhost:9092
 
 sudo bin/kafka-console-producer.sh --topic ornek --bootstrap-server localhost:9092
